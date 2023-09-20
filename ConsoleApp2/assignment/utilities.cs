@@ -13,13 +13,13 @@ namespace ConsoleApp2.assignment
         {
             Console.WriteLine("Enter your name: ");
 
-           String UserName = Console.ReadLine();
+           String userName = Console.ReadLine();
 
-            Console.WriteLine(UserName);
+            Console.WriteLine(userName);
 
             Console.WriteLine("Enter your favorite color: ");
-            String FavoriteColor = Console.ReadLine();
-            Console.WriteLine("#" + FavoriteColor);
+            String favoriteColor = Console.ReadLine();
+            Console.WriteLine("#" + favoriteColor);
 
             String message = "Please enter your mothertongue: ";
             Console.WriteLine(message);
@@ -31,9 +31,11 @@ namespace ConsoleApp2.assignment
             String text = Console.ReadLine();
             Console.WriteLine(text);
 
-            String FirstName = "Asmaa";
-            String LastName = "Abualkheir";
-            Console.WriteLine(LastName + ", " + FirstName);
+            String firstName = "Asmaa";
+            String lastName = "Abualkheir";
+            Console.WriteLine(lastName + ", " + firstName);
+
+            Console.WriteLine("test");
 
 
             
