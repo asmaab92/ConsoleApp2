@@ -35,7 +35,7 @@ namespace ConsoleApp2.assignment
             String lastName = "Abualkheir";
             Console.WriteLine(lastName + ", " + firstName);
 
-            Console.WriteLine("test");
+            
 
 
             
