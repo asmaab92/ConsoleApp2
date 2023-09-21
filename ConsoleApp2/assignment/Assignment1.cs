@@ -10,11 +10,23 @@ namespace ConsoleApp2.assignment
     {
         public static void Main(string[] args)
         {
-            Method1();
-            Method2();
-            Method3();
-            Method4();
-            Method5();
+          Console.WriteLine(  Method1());
+
+           String result2 = Method2();
+            Console.WriteLine( result2 );
+
+            String message = "Please enter your mothertongue";
+          String result3 =  Method3(message);
+            Console.WriteLine( result3 );
+
+            String word = "season";
+          String result4 =  Method4(word);
+            Console.WriteLine(result4);
+
+            String firstName = "Enter your first name please: ";
+            String lastName = "Enter your last name please: ";
+           String result5 = Method5(firstName,lastName);
+            Console.WriteLine(result5);
 
         }
 
@@ -22,7 +34,7 @@ namespace ConsoleApp2.assignment
         {
             Console.WriteLine("Please enter your name: ");
             String userName = Console.ReadLine();
-            Console.WriteLine(userName);
+            
             return userName;
         }
 
@@ -30,36 +42,37 @@ namespace ConsoleApp2.assignment
         {
         Console.WriteLine("Write your favorite color: ");
         String favoriteColor = Console.ReadLine();
-            Console.WriteLine("#" + favoriteColor);
-            return favoriteColor;
+            
+            return "#" + favoriteColor;
         }
 
-        public static String Method3() 
+        public static String Method3(String message) 
         {
-            String message = "Please enter your mothertongue";
+            
             Console.WriteLine(message);
             String mothertongue = Console.ReadLine();
-            Console.WriteLine(mothertongue);
+            
             return mothertongue;
         }
 
-        public static String Method4()
+        public static String Method4(String word)
         {
-            String word = "season";
+            
             Console.WriteLine("Please write your favorite " + word);
             String text = Console.ReadLine();
-            Console.WriteLine(text);
+            
             return text;
         }
 
-        public static String Method5() 
+        public static String Method5(String firstName,String lastName) 
         {
-        Console.WriteLine("Enter your first name ");
-            String firstName = Console.ReadLine();
-        Console.WriteLine("Enter your last name ");
-            String lastName = Console.ReadLine();
+            Console.WriteLine("Enter your first name please: ");
+             firstName = Console.ReadLine();
+            Console.WriteLine("Enter your last name please: ");
+
+            lastName = Console.ReadLine();
             String nameFormate = lastName + ", " + firstName;
-            Console.WriteLine(nameFormate);
+          
             return nameFormate;
         }
     }
